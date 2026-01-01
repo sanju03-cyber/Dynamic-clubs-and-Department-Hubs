@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms for Clubs</title>
+    <link rel="icon" href="images/college_3227076.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center mb-4 fw-bold">Apply for Club Membership</h3>
+
+        <form id="clubForm">
+
+            <!-- Row 1 -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Full Name</label>
+                    <input type="text" class="form-control" name="fullname" placeholder="Enter your name" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Department</label>
+                    <input type="text" class="form-control" name="department" placeholder="Enter your department"
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Club You Want to Join</label>
+                    <select class="form-select" name="club" required>
+                        <option value="">Select a club</option>
+                        <option>Technical-Club</option>
+                        <option>Culturals-Club</option>
+                        <option>Sports-Club</option>
+                        <option>Literary-Club</option>
+                        <option>Photography & Media Club</option>
+                        <option>Gaming & E-Sports Club</option>
+                        <option>Entrepreneurship Club</option>
+                        <option>NSS / Social Service Club</option>
+                        <option>Eco & Nature Club</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Why do you want to join?</label>
+                <textarea class="form-control" name="reason" rows="3" placeholder="Write a short reason"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">
+                    Apply Now
+                </button>
+
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        © 2025 CampusHub — Designed for Student Engagement
+    </footer>
+
+    <script>
+        document.getElementById("clubForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = {
+                fullName: this.fullname.value,
+                email: this.email.value,
+                department: this.department.value,
+                club: this.club.value,
+                reason: this.reason.value
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbyxoAGW5fdbaPhc7mE-QAG8j-vpfOLWBolfmG_eS-ffrlt7iHVhDTVV2YSfRHCvs01MNw/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+
+            alert("Application submitted successfully!");
+            this.reset();
+        });
+    </script>
+
+
+
+</body>
+
+</html>

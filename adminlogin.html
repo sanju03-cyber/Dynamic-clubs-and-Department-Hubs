@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - Academics</title>
+<link rel="icon" href="images/college_3227076.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="leaderlogin.css"> 
+</head>
+<body>
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Dashboard - Academics Section</h2>
+
+    <!-- SCHOLARSHIP MANAGEMENT -->
+    <div class="dashboard-section mb-5">
+        <h4>Scholarships</h4>
+        <form id="scholarshipForm">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Scholarship Name</label>
+                    <input type="text" id="scholarshipName" class="form-control" placeholder="Scholarship Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Eligibility criteria</label>
+                    <input type="text" id="scholarshipEligibility" class="form-control" placeholder="Scholarship Name" required>
+                </div>
+                </div>
+                 <div class="row mb-3"></div>
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Scholarship Details</label>
+                    <textarea id="scholarshipDetails" class="form-control" placeholder="Details / Description" rows="3" required></textarea>
+                </div> <br><br>
+                <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success w-25">Add Scholarship</button>
+            </div>
+            </div>
+        </form>
+       <table class="table table-bordered mt-4">
+    <thead class="table-light text-center">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Eligibility</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="adminScholarshipTable"></tbody>
+</table>
+
+    </div>
+
+<!-- PLACEMENT SECTION -->
+ <div class="container mt-4">
+<div class="dashboard-section mb-5">
+    <h4>Placements</h4>
+    <form id="placementForm">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label fw-bold">Company Name</label>
+                <input type="text" id="placementCompany" class="form-control" placeholder="Company Name" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label fw-bold">Students Placed</label>
+                <input type="text" id="placementStudents" class="form-control" placeholder="Number of Students" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label class="form-label fw-bold">Additional Details</label>
+                <textarea id="placementDetails" class="form-control" placeholder="Optional Details" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success w-25">Add Placement</button>
+        </div>
+    </form>
+    <div id="placementCards" class="row mt-3"></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="adminauthorisation.js"></script>
+<script src="admindashboard.js"></script>
+</body>
+</html>

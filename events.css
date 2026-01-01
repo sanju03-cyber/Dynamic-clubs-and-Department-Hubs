@@ -1,0 +1,21 @@
+        .hero {
+            background: #223f75;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 80px;
+        }
+        .card {
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 400;
+            color: #1e3c72;
+        }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms for Events</title>
+    <link rel="icon" href="images/college_3227076.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center mb-4 fw-bold">Apply for Event Membership</h3>
+
+        <form id="clubForm">
+
+
+            <!-- Row 1 -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Full Name</label>
+                    <input type="text" class="form-control" name="fullname" placeholder="Enter your name" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Department</label>
+                    <input type="text" class="form-control" name="department" placeholder="Enter your department"
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-bold">Event You Want to Join</label>
+                    <select class="form-select" name="club" required>
+                        <option value="">Select an Event</option>
+                        <option>TechTalks - Innovation & AI Summit</option>
+                        <option>Sports Week - Clash of Champions</option>
+                        <option>Cultural Fiesta - Tradition Meets Talent</option>
+                        <option>Hackathon</option>
+                        <option>Quiz Competition</option>
+                        <option>Photography Contest</option>
+                        <option>Workshop - Personal Branding & Resume Building</option>
+                        <option>Social Service Drive - Give Back to Society</option>
+                        <option>Annual Club Day - Celebrating Achievements</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Why do you want to join?</label>
+                <textarea class="form-control" name="reason" rows="3" placeholder="Write a short reason"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">
+                    Apply Now
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 CampusHub — Designed for Student Engagement
+    </footer>
+
+    <script>
+        document.getElementById("clubForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch("https://script.google.com/macros/s/AKfycbz_-I6oW5Nn9pAJ8IO9diBqCvN2rnDAe1jQtrmvRBAOokQwMk3b8eah9XfI6OEPwjZupQ/exec", {
+                method: "POST",
+                body: formData
+            });
+
+            alert("Application submitted successfully!");
+            this.reset();
+        });
+    </script>
+
+
+
+</body>
+
+</html>

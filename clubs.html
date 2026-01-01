@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <link rel="icon" href="images/college_3227076.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<style>
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-color: #f5f7fa;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <div class="logo">CampusHub</div>
+        <div class="nav d-none d-md-flex">
+            <a href="home.html">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a> 
+             <div class="dropdown">
+            <a href="#">Departments ▾</a>
+            <!-- Department Dropdown -->
+             <!-- Dropdown Menu -->
+            <div class="dropdown-menu">
+                <a href="cse.html">CSE</a>
+                <a href="cse.html">ECE</a>
+                <a href="cse.html">EEE</a>
+                <a href="cse.html">Mech</a>
+                <a href="cse.html">Civil</a>
+            </div>
+        </div>
+             <div class="dropdown">
+            <a href="#">Academics ▾</a>
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu">
+                <a href="scholorship.html">Scholarship</a>
+                <a href="examtimetable.html">Exam Timetable</a>
+                <a href="examresult.html">Exam Results</a>
+                <a href="placement.html">Placement</a>
+            </div>
+        </div>
+            <a href="aboutus.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+          <a href="#" class="login" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+    </nav>
+    <!--Hero section-->
+    <div class="hero">
+        <h1>Available Clubs</h1>
+        <p>Join in your favourite club and achieve your dreams</p>
+    </div>
+    <!--Club Section Cards-->
+    <div class="container mt-4">
+        <div class="row" id="clubCards"></div>
+
+        <div class="row justify-content-center">
+            <!--Card-1-->
+            <div class="col-md-4 col-sm-6 mb-4  d-flex gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Technical-Club</h3>
+                    <p class="text-justify">The Technology Club is a hub for innovation, coding, and creative
+                        problem-solving. Students collaborate on projects, attend workshops, and participate in
+                        competitions like hackathons and tech expos. The club aims to empower students with real-world
+                        technical skills.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Coding Workshops</li>
+                        <li>AI & Robotics Sessions</li>
+                        <li>Tech Quizzes & Competitions</li>
+                        <li>Web / App Development</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: technicalclub@gmail.com</li>
+                    </ul>
+                    <br><br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+            <!--Card-2-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/culturals-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Culturals-Club</h3>
+                    <p class="text-justify">The Cultural Club celebrates diversity, creativity, and talent through
+                        various art forms. It provides students a platform to express themselves in music, dance, drama,
+                        and visual arts, making campus life vibrant and engaging.A space celebrating music, dance, art,
+                        and cultural.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Dance & Music Performances</li>
+                        <li>Drama & Theatre</li>
+                        <li>Art Exhibitions</li>
+                        <li>Festival Celebrations</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: culturalsclub@gmail.com</li>
+                    </ul><br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-3-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/sports-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Sports-Club</h3>
+                    <p class="text-justify">The Sports Club promotes physical fitness, teamwork, and leadership among
+                        students. The club manages regular practice sessions, inter-department tournaments, and
+                        competitions across different sports categories. We have all indoor and outdoor games for our
+                        student fitness
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Football, Cricket, Volleyball etc...</li>
+                        <li>Indoor Games: Chess, Carrom, Table Tennis etc...</li>
+                        <li>Sports Tournaments</li>
+                        <li>Fitness Training</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: sportsclub@gmail.com</li>
+                    </ul>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-4-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/sports-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Literary-Club</h3>
+                    <p class="text-justify">The Literary Club encourages creativity in writing, speaking, and critical
+                        thinking. It provides a space for students who love literature, poetry, debates, and public
+                        speaking to sharpen their communication skills. we can add contents according to our clubs
+                        and can add descriptions
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Debates & Group Discussions</li>
+                        <li>Poetry & Creative Writing</li>
+                        <li>Book Reading Sessions</li>
+                        <li>Speech Competitions</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: literacyclub@gmail.com</li>
+                    </ul>
+                    <br><br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+
+            <!--Card-5-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/sports-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center"> Photography & Media Club</h3>
+                    <p class="text-justify">The Photography & Media Club captures the essence of campus life through
+                        creative storytelling, videography, and photography. we can also have competition for photo and
+                        video editing , UI
+                        designing , VFX , Animation(2D&3Dd) etc...
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Photo Walks</li>
+                        <li>Video & Photo Editing Workshops</li>
+                        <li>Event Coverage</li>
+                        <li>Social Media Content Creation</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: designclub@gmail.com</li>
+                    </ul>
+                    <br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-6-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/sports-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Gaming & E-Sports Club</h3>
+                    <p class="text-justify">A club for gamers and e-sports enthusiasts where students compete in
+                        tournaments, learn strategies, and explore career opportunities in the gaming industry.A club
+                        for gamers and e-sports enthusiasts where students compete in tournaments, learn strategies, and
+                        explore career</p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>E-Sports Tournaments</li>
+                        <li>Strategy Discussions</li>
+                        <li>Streaming Sessions</li>
+                        <li>Team Matches</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: esportsclub@gmail.com</li>
+                    </ul>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+
+            <!--Card-7-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/culturals-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Entrepreneurship Club</h3>
+                    <p class="text-justify">The Entrepreneurship Club inspires students to think like innovators and
+                        future business leaders. It organizes startup talks, mentoring sessions, and idea-pitching
+                        competitions to develop an entrepreneurial mindset.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Start-Up Workshops</li>
+                        <li>Pitching Events</li>
+                        <li>Mentor Interactions</li>
+                        <li>Business Case Studies</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: enterpreneurclub@gmail.com</li>
+                    </ul>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-8-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/culturals-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">NSS / Social Service Club</h3>
+                    <p class="text-justify">This club focuses on community development and social responsibility. It
+                        encourages students to contribute to society through meaningful initiatives and outreach
+                        programs.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Tree Plantation Drives</li>
+                        <li>Blood Donation Camps</li>
+                        <li>Cleanliness Campaigns</li>
+                        <li>Charity Events</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: socialservclub@gmail.com</li>
+                    </ul><br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-9-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/culturals-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Eco & Nature Club</h3>
+                    <p class="text-justify">The Eco & Nature Club raises awareness about environmental conservation.
+                        Members work on sustainability projects, nature walks, and green initiatives throughout the
+                        campus.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Activities Offered</h3>
+                    <ul>
+                        <li>Eco-Awareness Campaigns</li>
+                        <li>Waste Management Initiatives</li>
+                        <li>Nature Walks</li>
+                        <li>Campus Cleaning Drives</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Co-ordinator: ABC </li>
+                        <li>Student Leader: XYZ</li>
+                        <li>Contact email: econatureclub@gmail.com</li>
+                    </ul>
+                    <br><br>
+                    <a href="form.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">CampusHub Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <!-- Login Type -->
+                <div class="mb-3">
+                    <label class="form-label">Login ID</label>
+                    <select class="form-select" id="loginType">
+                        <option value="">Select Login Type</option>
+                        <option value="student">Student Login</option>
+                        <option value="leader">Leader / Co-ordinator Login</option>
+                        <option value="admin">Admin Login</option>
+                    </select>
+                </div>
+
+                <!-- Username -->
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+
+                <!-- Error -->
+                <div class="text-danger text-center fw-bold" id="errorMsg"></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary w-100" onclick="login()">Login</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+<footer>
+        © 2025 CampusHub — Designed for Student Engagement
+    </footer>
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="login.js"></script>
+        <script src="club.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .application-container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .application-container h2 {
+            text-align: center;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control, .form-select {
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .btn-submit {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px;
+            border-radius: 10px;
+            width: 100%;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(to right, #2a5298, #1e3c72);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }

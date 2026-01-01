@@ -1,0 +1,45 @@
+.form-section {
+    background: #f4f7fc;
+    padding: 80px 0;
+}
+
+.form-card {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h3 {
+    color: #223f75;
+    font-weight: bold;
+}
+
+.form-label {
+    color: #223f75;
+}
+
+.form-control,
+.form-select {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #223f75;
+    box-shadow: 0 0 0 0.2rem rgba(34, 63, 117, 0.25);
+}
+
+.btn-apply {
+    background-color: #223f75;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-apply:hover {
+    background-color: #1a3160;
+    color: white;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="icon" href="images/college_3227076.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<style>
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-color: #f5f7fa;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <div class="logo">CampusHub</div>
+        <div class="nav d-none d-md-flex">
+            <a href="home.html">Home</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="events.html">Events</a>
+            <div class="dropdown">
+                <a href="#">Departments ▾</a>
+                <!-- Department Dropdown -->
+                <!-- Dropdown Menu -->
+                <div class="dropdown-menu">
+                    <a href="cse.html">CSE</a>
+                    <a href="cse.html">ECE</a>
+                    <a href="cse.html">EEE</a>
+                    <a href="cse.html">Mech</a>
+                    <a href="cse.html">Civil</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Academics ▾</a>
+                <!-- Dropdown Menu -->
+                <div class="dropdown-menu">
+                    <a href="scholorship.html">Scholarship</a>
+                    <a href="examtimetable.html">Exam Timetable</a>
+                    <a href="examresult.html">Exam Results</a>
+                    <a href="placement.html">Placement</a>
+                </div>
+            </div>
+            <a href="aboutus.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="#" class="login" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+    </nav>
+
+    <!--Hero section-->
+    <div class="hero">
+        <h1>Upcoming Events</h1>
+        <p>Join in your favourite Event and achieve your dreams</p>
+    </div>
+    <!--Club Section Cards-->
+    <div class="container mt-4">
+        <div class="row" id="eventCards"></div>
+        <div class="row justify-content-center">
+
+            <!--Card-1-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">TechTalks - Innovation & AI Summit</h3>
+                    <p class="text-justify">Kickstart your college journey with our vibrant Orientation Day! Meet your
+                        seniors, explore club activities, discover campus opportunities, and get introduced to the
+                        exciting world of our college club. Fun games, interactive sessions, and networking
+                        activities included.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>AI Trends & Future Technologies</li>
+                        <li>Innovation in Real-World Applications</li>
+                        <li>Student Project Presentations</li>
+                        <li>Expert Talks & Panel Discussion</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: techtalkevents@gmail.com</li>
+                    </ul>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-2-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Sports Week - Clash of Champions</h3>
+                    <p class="text-justify">A full week of energetic sports events like football, cricket, badminton,
+                        volleyball, and athletic events. Compete and cheer for your department teams. Championship
+                        trophy awaits the winners!
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Event Date & Time</li>
+                        <li>Category (Solo/Group)</li>
+                        <li>Prize Distrubution</li>
+                        <li>Firing</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: sportsevent@gmail.com</li>
+                    </ul>
+                    <br><br><br>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-3-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Cultural Fiesta - Tradition Meets Talent</h3>
+                    <p class="text-justify">A celebration of art, dance, music, and colors! Participants will showcase
+                        talent through singing, dancing, drama, and fashion parade. Open to all departments. Don’t miss
+                        the exciting food stalls and cultural booths.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Program Date & Time</li>
+                        <li>Organizes Details</li>
+                        <li>Dance and Events</li>
+                        <li>Thankyou Speech</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: culturalevents@gmail.com</li>
+                    </ul>
+                    <br><br>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-4-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Hackathon</h3>
+                    <p class="text-justify">A 24–48 hour coding challenge where students build apps, websites, or tech
+                        solutions to real-world problems. Teams collaborate, innovate, and present final prototypes.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Event Date & Time</li>
+                        <li>Team Size (e.g., 2–4 members)</li>
+                        <li>Theme (AI, IoT, Healthcare, etc.)</li>
+                        <li>Venue (Computer Lab / Seminar)</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: hackaevents@gmail.com</li>
+                    </ul>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+
+            <!--Card-5-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Quiz Competition</h3>
+                    <p class="text-justify">Fast-paced quiz event on GK, tech, sports, movies, science or mixed
+                        topics.Fast-paced quiz event on GK, tech, sports, movies, science or mixed topics.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Event Date & Time</li>
+                        <li>Schedule & Venue (Ground)</li>
+                        <li>Topics</li>
+                        <li>Round Details (Prelims, Finals)</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: quizevents@gmail.com</li>
+                    </ul>
+                    <br>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-6-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Photography Contest</h3>
+                    <p class="text-justify">A Creative competition where students submit photos or short films based on
+                        themes like nature, school and college life/students life, or social awareness
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Submission Format (JPEG/MP4)</li>
+                        <li>Time Limit (for films)</li>
+                        <li>Prize Details</li>
+                        <li>Upload Link</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul>
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: photography@gmail.com</li>
+                    </ul>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-7-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Workshop - Personal Branding & Resume Building</h3>
+                    <p class="text-justify">A 24–48 hour coding challenge where students build apps, websites, or tech
+                        solutions to real-world problems. Teams collaborate, innovate, and present final prototypes.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Personal Branding Essentials</li>
+                        <li>Professional Resume Creation</li>
+                        <li>LinkedIn Profile Optimization</li>
+                        <li>Interview Skills & Presentation Tips</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: Workshopevents@gmail.com</li>
+                    </ul>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-8-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Social Service Drive - Give Back to Society</h3>
+                    <p class="text-justify">Join our NSS-inspired community event featuring campus clean-up, tree
+                        plantation, blood donation camp, and charity drives. Make a meaningful impact and earn
+                        volunteer certificates.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Campus Clean-Up Drive</li>
+                        <li>Tree Plantation Program</li>
+                        <li>Blood Donation Camp</li>
+                        <li>Charity Donation Initiative</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: socialevents@gmail.com</li>
+                    </ul>
+                    <br><br>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+            <!--Card-9-->
+            <div class="col-md-4 col-sm-6 mb-4 d-flex g-5 gx-5 gy-5 ">
+                <div class="card p-3 shadow-sm h-100 w-100">
+                    <img src="images/coding-club.jpg" class="card-img-top" style="height: 210px;">
+                    <h3 class="card-title mt-3 text-center">Annual Club Day - Celebrating Achievements</h3>
+                    <p class="text-justify">The grand closing event of the academic year! Includes prize distribution,
+                        performance showcases, club highlights, and a special DJ night to celebrate the year’s success.
+                    </p>
+                    <h3 class="card-title mt-3 text-center">Event Details</h3>
+                    <ul>
+                        <li>Event Date & Time</li>
+                        <li>Prize Distrubution</li>
+                        <li>Dance and Mimes(culturals)</li>
+                        <li>National Anthem</li>
+                    </ul>
+                    <h3 class="card-title mt-3 text-center">Coordinators</h3>
+                    <ul class="list-unstyled">
+                        <li>Event-Co-ordinator: ABC </li>
+                        <li>Event Leader: XYZ</li>
+                        <li>Contact email: annualevent@gmail.com</li>
+                    </ul><br>
+                    <a href="form1.html" class="btn btn-primary w-100">Join Now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">CampusHub Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Login Type -->
+                    <div class="mb-3">
+                        <label class="form-label">Login ID</label>
+                        <select class="form-select" id="loginType">
+                            <option value="">Select Login Type</option>
+                            <option value="student">Student Login</option>
+                            <option value="leader">Leader / Co-ordinator Login</option>
+                            <option value="admin">Admin Login</option>
+                        </select>
+                    </div>
+
+                    <!-- Username -->
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+
+                    <!-- Error -->
+                    <div class="text-danger text-center fw-bold" id="errorMsg"></div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary w-100" onclick="login()">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 CampusHub — Designed for Student Engagement
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+    <script src="Eveni.js"></script>
+
+</body>
+
+</html>
